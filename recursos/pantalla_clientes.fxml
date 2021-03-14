@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="200.0" style="-fx-background-color: #29a9cb;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@erp.png" />
+               </image>
+            </ImageView>
+            <Button id="btn_guardar" layoutX="50.0" layoutY="373.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="100.0" style="-fx-font: 10pt 'Verdana'; -fx-effect: dropshadow( one-pass-box , black , 10 , 0.0 , 2 , 0 ); -fx-background-color: #ffffff;" text="Guardar" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="370.0" />
+            <Button id="btn_salir" layoutX="50.0" layoutY="424.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="100.0" style="-fx-font: 10pt 'Verdana'; -fx-effect: dropshadow( one-pass-box , black , 10 , 0.0 , 2 , 0 ); -fx-background-color: #ffffff;" text="Volver" AnchorPane.topAnchor="420.0" />
+            <Button id="btn_borrar" layoutX="50.0" layoutY="322.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="100.0" style="-fx-font: 10pt 'Verdana'; -fx-effect: dropshadow( one-pass-box , black , 10 , 0.0 , 2 , 0 ); -fx-background-color: #ffffff;" text="Borrar" AnchorPane.topAnchor="320.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="200.0" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Text layoutX="100.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIF Cliente" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="191.05078125" />
+            <Text layoutX="100.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="241.0" />
+            <Text layoutX="100.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Domicilio" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="292.05078125" />
+            <TextField id="tf_nif_cliente" layoutX="274.0" layoutY="187.0" prefHeight="25.0" prefWidth="226.0" />
+            <TextField id="tf_nombre" layoutX="274.0" layoutY="237.0" prefHeight="25.0" prefWidth="226.0" />
+            <TextField id="tf_domicilio" layoutX="274.0" layoutY="288.0" prefHeight="25.0" prefWidth="226.0" />
+            <Text fill="#29a9cb" layoutX="229.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLIENTES">
+               <font>
+                  <Font name="Verdana" size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
